@@ -9,7 +9,7 @@ from verl.workers.agent.envs.mm_process_engine.prompt import PROMPT
 from math import ceil, floor
 # 临时修复
 # ToolBase.registry = {}
-
+# (ToolBase)
 class VisualToolBoxV2(ToolBase):
     name = "visual_toolbox_v2"
     # user_prompt = "Here is the cropped image returned after you calling the function {}.\nIf the images provided above are sufficient to answer the user's question, please put your final answer within <answer></answer>. Otherwise you can continue to call tools within <tool_call></tool_call>."
@@ -75,7 +75,7 @@ class VisualToolBoxV2(ToolBase):
             tool_name = tool_call["name"]
             args = tool_call["arguments"]
         
-            if tool_name == "image_zoom_in_tool":
+            if tool_name == "image_zoom_in_tool":#  image_zoom_in_tool
                 # Zoom in by cropping the image
                 # image_path = args["image_path"]
                 bbox = args["bbox_2d"]

@@ -119,6 +119,7 @@ actor_rollout_ref:
       n: 1
       do_sample: False # default eager for validation
     agent:
+      # activate_agent: True
       activate_agent: False
       single_response_max_tokens: 32768
       max_turns: 50

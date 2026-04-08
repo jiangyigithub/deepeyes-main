@@ -53,6 +53,11 @@ def _default_compute_score(data_source, solution_str, ground_truth, extra_info=N
         from . import geo3k
 
         res = geo3k.compute_score(solution_str, ground_truth)
+    
+    elif data_source in ["/workspace/vla/zzz_backup/geo3k"]:
+        from . import geo3k
+
+        res = geo3k.compute_score(solution_str, ground_truth)
 
     elif data_source in ['rag_v2-train']:
         from . import agent
