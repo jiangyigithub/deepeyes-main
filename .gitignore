@@ -127,3 +127,8 @@ tests/e2e/toy_examples/deepspeed/synchronous/output.txt
 logs
 log
 outputs
+RLLoggingBoard-main/rollout_samples/qwenvl25_geo3k
+RLLoggingBoard-main/rollout_samples/qwen25
+RLLoggingBoard-main/rollout_samples/qwen2_5_vl_7b_function_rm
+RLLoggingBoard-main/rollout_samples/deepeyes_3b
+RLLoggingBoard-main/rollout_samples/deepeyes_task
